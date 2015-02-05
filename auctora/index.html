@@ -49,6 +49,18 @@
 		::-webkit-scrollbar {
 		display: none;
 		}
+		.embedded #powered-by, #powered-by, a#powered-by {
+			display:0 !important;
+			display:none !important;
+			background: none !important;
+			opacity:0 !important;
+		}
+		.reveal .controls div.navigate-right {
+			border-left-color: #ffffff !important;
+		}
+		.reveal .controls div.navigate-left {
+			border-right-color: #ffffff !important;
+		}
 		</style>
 	</head>
 
@@ -141,5 +153,16 @@ width: 3600px;">
 		</script><script type="text/javascript" src="./reveal.js - The HTML Presentation Framework_files/marked.js"></script><script type="text/javascript" src="./reveal.js - The HTML Presentation Framework_files/markdown.js"></script>
 
 
+<script type="text/javascript" src="./reveal.js - The HTML Presentation Framework_files/highlight.js"></script><script type="text/javascript" src="./reveal.js - The HTML Presentation Framework_files/zoom.js"></script><script type="text/javascript" src="./reveal.js - The HTML Presentation Framework_files/notes.js"></script>
 
-<script type="text/javascript" src="./reveal.js - The HTML Presentation Framework_files/highlight.js"></script><script type="text/javascript" src="./reveal.js - The HTML Presentation Framework_files/zoom.js"></script><script type="text/javascript" src="./reveal.js - The HTML Presentation Framework_files/notes.js"></script></body></html>
+	<script type="text/javascript">
+		setTimeout(function () {
+		document.getElementsByClassName("embedded").style.display = 'none';
+		document.getElementsById("powered-by").style.display = "none";
+		document.getElementsByClassName("embedded").style.opacity = 0;
+		document.getElementsById("powered-by").style.opacity = 0;
+		document.getElementsById("powered-by").style.width = 0;
+		document.getElementsById("a#powered-by").style.height = '0';}, 4000);
+
+	</script>
+	</body></html>
